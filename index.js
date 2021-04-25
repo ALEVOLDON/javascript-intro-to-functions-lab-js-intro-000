@@ -18,14 +18,14 @@ function sayHiToGrandma(string) {
   var lowercase = 'I can\'t hear you!'
   var uppercase = 'YES INDEED!'
   var mixedCase = 'I love you, Grandma.'
-
-  if (lowercase.toLowerCase() === lowercase ) {
-    console.log(lowercase)
-  } else if (uppercase.toUpperCase() === uppercase ) {
-    console.log(uppercase)
-  } else if (mixedCase.toLowerCase() === mixedCase &&
-  mixedCase.toUpperCase() === mixedCase)
-  {
+if(string.toLowerCase() === mixedCase.toLowerCase()){
     console.log('I love you, too.')
+    return mixedCase;
+}else if (string.toLowerCase() === string ) {
+    console.log(lowercase);
+    return lowercase;
+  } else if (string.toUpperCase() === string ) {
+    console.log(uppercase);
+  	return uppercase;
   }
 }
